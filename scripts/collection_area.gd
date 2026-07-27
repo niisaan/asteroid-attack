@@ -8,7 +8,7 @@ extends Area2D
 
 func _on_body_entered(body: Node2D) -> void:
 	if body.is_in_group("asteroids"):
-		print("Asteroid collected")
+		print("Asteroids are collected")
 		body.queue_free()
 		collect_sound.play()
 	else:
